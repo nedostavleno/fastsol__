@@ -1,0 +1,92 @@
+*
+{
+  font-family: 'TT Norms Regular';
+  margin: 0;
+  padding: 0;
+  transition: all .2s ease;
+}
+
+:root {
+  --theme-bg: #18191c;
+  --theme-layout: #1e2023;
+}
+
+a:hover
+{
+  text-decoration: none;
+}
+
+
+body
+{
+  background: var(--theme-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.form-control {
+  background-color: #f6f7ff;
+  border-color: transparent;
+  color: #4d5773
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #919bba
+}
+
+.form-control:-moz-placeholder,.form-control::-moz-placeholder {
+  color: #919bba
+}
+
+.form-control:-ms-input-placeholder {
+  color: #919bba
+}
+
+.form-control-light {
+  border-color: #e1e6ef;
+  background: #fff
+}
+
+.form-control:focus {
+  border-color: #242629;
+  box-shadow: 0 0 0 .2rem rgba(36,38,41,.5)
+}
+
+.auth-content {
+  height: 100%;
+  background: var(--theme-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.auth-content > .window {
+  background: var(--theme-layout);
+  border-radius: 10px;
+  width: 400px;
+}
+
+.post-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.post-content > .card {
+  display: block;
+  background: var(--theme-layout);
+  padding: 35px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar { width: 2px; height: 2px;}
+::-webkit-scrollbar-track {  background-color: #0F1119;}
+::-webkit-scrollbar-track-piece { background-color: #0F1119;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #4154FF; border-radius: 5px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #0F1119;}

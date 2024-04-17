@@ -1,0 +1,33 @@
+<div class="auth-content">
+
+  {not-auth}
+  <div class="window">
+
+    <div class="text-center pt-4">Авторизация</div>
+
+    <form class="text-right p-4" action="" method="POST" id="loginUser">
+      <input class="form-control mb-2" type="text" name="login" placeholder="Логин">
+      <input class="form-control mb-2" type="password" name="password" placeholder="Пароль">
+      <button type="button" class="btn btn-sm btn-primary" onclick="sendRequest('loginUser', '/login');">Авторизаваться</button>
+    </form>
+
+    <div class="text-center pb-4">
+      <a href="/register" type="button" class="btn btn-sm btn-success">Регистрация</a>
+      <a href="/restore" type="button" class="btn btn-sm btn-light">Забыли пароль?</a>
+    </div>
+
+  </div>
+  {/not-auth}
+
+  {auth}
+  <div>
+    <a href="/posts" type="button" class="btn btn-light">Записи</a>
+    <button type="button" class="btn btn-danger" onclick="sendRequest(null, '/layout');">Выйти</button>
+  </div>
+
+  <div class="post-content">{{ posts }}</div>
+
+  <div class="pagination-content">{{ pagination }}</div>
+  {/auth}
+  
+</div>

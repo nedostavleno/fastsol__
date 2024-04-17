@@ -1,0 +1,21 @@
+<div class="auth-content">
+
+  {not-auth}
+  <div class="window">
+
+    <div class="text-center pt-4">Восстановление пароля</div>
+
+    <form class="text-right p-4" action="" method="POST" id="restoreUserPassword">
+      <input class="form-control mb-2" type="text" name="login" placeholder="Логин">
+      <button type="button" class="btn btn-sm btn-primary" onclick="sendRequest('restoreUserPassword', '/restore');">Восстановить</button>
+    </form>
+
+    <div class="text-center pb-4">
+      <a href="/" type="button" class="btn btn-sm btn-success">Авторизация</a>
+      <a href="/register" type="button" class="btn btn-sm btn-light">Регистрация</a>
+    </div>
+
+  </div>
+  {/not-auth}
+  
+</div>
